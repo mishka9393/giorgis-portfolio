@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/img/GM..svg">
+
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/media.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+    <title>GM</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="check-btn">
+                    <i class="fas fa-bars"> <img src="img/menu-icon.svg" alt="menu" class="fas"></i>
+                </label>
+
+                <a href="/home.html" class="logo-a"><img src="/img/GM..svg" alt="GM" class="gm"></a>
+
+
+                <ul>
+                    <a class="nav-link" href="/case-studies.html">
+                        <p class="p-nav">Case Studies</p>
+                    </a>
+                    <a class="nav-link" href="blog.html">
+                        <p class="p-nav">Blog</p>
+                    </a>
+                    <a href="download-resume.html"> <button class="btn menu-btn1"><img src="/img/btn icon 1.svg" alt="" class="nav-btn">
+                            Download Resume</button></a>
+                    <a href="contact.html"><button class="btn menu-btn2"><img src="/img/btn icon 2.svg" alt=""
+                                class="nav-btn">Contact me</button>
+                    </a>
+                </ul>
+                <div class="mobile-menu-holder">
+                    <div class="menu-div menu-open" onclick="openmenu()">
+                        <img src="./img/menu-icon.svg" alt="Menu">
+                    </div>
+
+                    <div class="menu-div menu-close" onclick="closemenu()">
+                        <img src="./img/Close.svg" alt="Close Menu">
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+    <div class="mobile-menu-div">
+        <nav class="mobile-menu-nav">
+            <li><a href="#" class="nav-link">Case Studies</a></li>
+            <li><a href="#" class="nav-link">Blog</a></li>
+        </nav>
+        <div class="mobile-buttons-nav">
+            <a href="#"> <button class="btn menu-btn1"><img src="/img/btn icon 1.svg" alt="" class="nav-btn">
+                    Download Resume</button>
+            </a>
+            <a href="#"><button class="btn menu-btn2"><img src="/img/btn icon 2.svg" alt="" class="nav-btn">Contact
+                    me</button>
+            </a>
+        </div>
+    </div>
+    <main>
+        <div class="container">
+        <div class="portfolio container-margin">
+            <h2 class="h2 h2-section" data-aos="fade-up">Blog</h2>
+            <div class="blog-div">
+                <a href="article.html">
+                    <div class="blog-box" data-aos="fade-up">
+                        <img src="/img/blog-1.png" alt="blog" class="blog-img">
+                        <div class="blog-info">
+                            <h3 class="h3 blog-h3">Best Free Google Fonts for Junior UI Designers</h3>
+                            <p class="regular-p blog-p">Which fonts should you use for your very first design
+                                projects?
+                                It's
+                                a...</p>
+                            <div class="see-a">
+                                <p class="see-p">See more</p><img src="/img/violet-arrow.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="blog.html">
+                    <div class="blog-box" data-aos="fade-up" data-aos-delay="50">
+                        <img src="/img/blog-2.png" alt="blog" class="blog-img">
+                        <div class="blog-info">
+                            <h3 class="blog-h3">How to come up with new UI Styles? Easy!</h3>
+                            <p class="regular-p blog-p">Which fonts should you use for your very first design
+                                projects? It's a...</p>
+                            <div class="see-a">
+                                <p class="see-p">See more</p><img src="/img/violet-arrow.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="blog.html">
+                    <div class="blog-box" data-aos="fade-up">
+                        <img src="/img/blog-3.png" alt="blog" class="blog-img">
+                        <div class="blog-info">
+                            <h3 class="blog-h3">Is it worth learning UI/UX Design in 2023?</h3>
+                            <p class="regular-p blog-p">Which fonts should you use for your very first design
+                                projects? It's a...</p>
+                            <div class="see-a">
+                                <p class="see-p">See more</p><img src="/img/violet-arrow.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="blog.html">
+                    <div class="blog-box" data-aos="fade-up" data-aos-delay="50">
+                        <img src="/img/blog-4.png" alt="blog" class="blog-img">
+                        <div class="blog-info">
+                            <h3 class="blog-h3">Why UI/UX Design is in Top 10 Depressing jobs?</h3>
+                            <p class="regular-p blog-p">Which fonts should you use for your very first design projects? It's a...</p>
+                            <div class="see-a">
+                                <p class="see-p">See more</p><img src="/img/violet-arrow.png" alt="">
+                            </div>
+                        </div>
+                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                        <script>
+                            AOS.init();
+                        </script>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+       
+            <div class="contact-section case-margin">
+                <p class="regular-p contact-ps" data-aos="fade-up">Interested?</p>
+                <h2 class="h2 contact-h2" data-aos="fade-up">Let’s Talk about your project</h2>
+                <div class="buttons">
+                    <div class="btn contact-btn" data-aos="fade-up"><img src="/img/call icon.svg" class="contact-icon"
+                            alt="">
+                        <p class="regular-p">(+995) 551 18 80 00</p>
+                    </div>
+                    <div class="btn contact-btn" data-aos="fade-up"><img src="/img/mail-icon.svg" class="contact-icon"
+                            alt="">
+                        <p class="regular-p">hello@giomats.design</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <div class="footer-section">
+            <div class="container">
+                <div class="footer-top" data-aos="fade-up">
+                    <h4 class="h4 footer-h2">Giomats.design</h4>
+                    <div class="social">
+                        <a href="#"><img src="/img/social -1.svg" alt="" class="social-icons"></a>
+                        <a href="#"><img src="/img/social-2.svg" alt="" class="social-icons"></a>
+                        <a href="#"><img src="/img/social-3.svg" alt="" class="social-icons"></a>
+                        <a href="#"><img src="/img/social-4.svg" alt="" class="social-icons"></a>
+                        <a href="#"><img src="/img/social-5.svg" alt="" class="social-icons"></a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="bottom-left">
+                        <a href="case-studies.html"><p class="footer-p">Case Studies</p></a>
+                        <a href="blog.html"><p class="footer-p">Blog</p></a>
+                        <a href="download-resume.html"><p class="footer-p">Download Resume</p></a>
+                        <a href="contact.html"><p class="footer-p">Contact me</p></a>
+                    </div>
+                    <div class="bottom-right">
+                        <p class="copyright">Copyright © Giomats.design, 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            })
+        }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>

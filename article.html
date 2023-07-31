@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/img/GM..svg">
+
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/media.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+    <title>GM</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="check-btn">
+                    <i class="fas fa-bars"> <img src="img/menu-icon.svg" alt="menu" class="fas"></i>
+                </label>
+
+                <a href="/home.html" class="logo-a"><img src="/img/GM..svg" alt="GM" class="gm"></a>
+
+
+                <ul>
+                    <a class="nav-link" href="/case-studies.html">
+                        <p class="p-nav">Case Studies</p>
+                    </a>
+                    <a class="nav-link" href="blog.html">
+                        <p class="p-nav">Blog</p>
+                    </a>
+                    <a href="download-resume.html"> <button class="btn menu-btn1"><img src="/img/btn icon 1.svg" alt=""
+                                class="nav-btn">
+                            Download Resume</button></a>
+                    <a href="contact.html"><button class="btn menu-btn2"><img src="/img/btn icon 2.svg" alt=""
+                                class="nav-btn">Contact me</button>
+                    </a>
+                </ul>
+                <div class="mobile-menu-holder">
+                    <div class="menu-div menu-open" onclick="openmenu()">
+                        <img src="./img/menu-icon.svg" alt="Menu">
+                    </div>
+
+                    <div class="menu-div menu-close" onclick="closemenu()">
+                        <img src="./img/Close.svg" alt="Close Menu">
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+    <div class="mobile-menu-div">
+        <nav class="mobile-menu-nav">
+            <li><a href="case-studies.html" class="nav-link">Case Studies</a></li>
+            <li><a href="blog.html" class="nav-link">Blog</a></li>
+        </nav>
+        <div class="mobile-buttons-nav">
+            <a href="download-resume.html"> <button class="btn menu-btn1"><img src="/img/btn icon 1.svg" alt=""
+                        class="nav-btn">
+                    Download Resume</button>
+            </a>
+            <a href="contact.html"><button class="btn menu-btn2"><img src="/img/btn icon 2.svg" alt=""
+                        class="nav-btn">Contact
+                    me</button>
+            </a>
+        </div>
+    </div>
+    <main>
+        <div class="article-img-div container">
+            <img src="img/article-main-img.png" alt="article-img" class="article-img">
+        </div>
+        <div class="container container-margin">
+
+            <div class="article-section">
+                <div class="article-btns">
+                    <a href="#"><button class="tutorials-tbn btn menu-btn1">
+                        Tutorials</button></a>
+                    <a href="#"> <button class="btn menu-btn1"><img src="/img/article-insta.png" alt="" class="nav-btn">
+                            Instagram Post</button>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-section">
+                <p class="regular-p contact-ps" data-aos="fade-up">Interested?</p>
+                <h2 class="h2 contact-h2" data-aos="fade-up">Let’s Talk about your project</h2>
+                <div class="buttons">
+                    <div class="btn contact-btn" data-aos="fade-up"><img src="/img/call icon.svg" class="contact-icon"
+                            alt="">
+                        <p class="regular-p">(+995) 551 18 80 00</p>
+                    </div>
+                    <div class="btn contact-btn" data-aos="fade-up"><img src="/img/mail-icon.svg" class="contact-icon"
+                            alt="">
+                        <p class="regular-p">hello@giomats.design</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-section">
+            <div class="container">
+                <div class="footer-top" data-aos="fade-up">
+                    <h4 class="h4 footer-h2">Giomats.design</h4>
+                    <div class="social">
+                        <a href="#"><img src="/img/social -1.svg" alt="" class="social-icons"></a>
+                        <a href="#"><img src="/img/social-2.svg" alt="" class="social-icons"></a>
+                        <a href="#"><img src="/img/social-3.svg" alt="" class="social-icons"></a>
+                        <a href="#"><img src="/img/social-4.svg" alt="" class="social-icons"></a>
+                        <a href="#"><img src="/img/social-5.svg" alt="" class="social-icons"></a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="bottom-left">
+                        <a href="case-studies.html">
+                            <p class="footer-p">Case Studies</p>
+                        </a>
+                        <a href="blog.html">
+                            <p class="footer-p">Blog</p>
+                        </a>
+                        <a href="download-resume.html">
+                            <p class="footer-p">Download Resume</p>
+                        </a>
+                        <a href="contact.html">
+                            <p class="footer-p">Contact me</p>
+                        </a>
+                    </div>
+                    <div class="bottom-right">
+                        <p class="copyright">Copyright © Giomats.design, 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            })
+        }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/img/GM..svg">
+
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/media.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+    <title>GM</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="check-btn">
+                    <i class="fas fa-bars"> <img src="img/menu-icon.svg" alt="menu" class="fas"></i>
+                </label>
+
+                <a href="/home.html" class="logo-a"><img src="/img/GM..svg" alt="GM" class="gm"></a>
+
+
+                <ul>
+                    <a class="nav-link" href="/case-studies.html">
+                        <p class="p-nav">Case Studies</p>
+                    </a>
+                    <a class="nav-link" href="blog.html">
+                        <p class="p-nav">Blog</p>
+                    </a>
+                    <a href="download-resume.html"> <button class="btn menu-btn1"><img src="/img/btn icon 1.svg" alt=""
+                                class="nav-btn">
+                            Download Resume</button></a>
+                    <a href="contact.html"><button class="btn menu-btn2"><img src="/img/btn icon 2.svg" alt=""
+                                class="nav-btn">Contact me</button>
+                    </a>
+                </ul>
+                <div class="mobile-menu-holder">
+                    <div class="menu-div menu-open" onclick="openmenu()">
+                        <img src="./img/menu-icon.svg" alt="Menu">
+                    </div>
+
+                    <div class="menu-div menu-close" onclick="closemenu()">
+                        <img src="./img/Close.svg" alt="Close Menu">
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+    <div class="mobile-menu-div">
+        <nav class="mobile-menu-nav">
+            <li><a href="case-studies.html" class="nav-link">Case Studies</a></li>
+            <li><a href="blog.html" class="nav-link">Blog</a></li>
+        </nav>
+        <div class="mobile-buttons-nav">
+            <a href="download-resume.html"> <button class="btn menu-btn1"><img src="/img/btn icon 1.svg" alt=""
+                        class="nav-btn">
+                    Download Resume</button>
+            </a>
+            <a href="contact.html"><button class="btn menu-btn2"><img src="/img/btn icon 2.svg" alt=""
+                        class="nav-btn">Contact
+                    me</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="error-section">
+        <div class="error-container">
+            <img src="img/error-img.png" alt="error" class="error-img">
+            <h1 class="h1">404 Error</h1>
+            <p class="regular-p">It seems like, you have entered an incorrect link, or it was deleted :( </p>
+            <a href="home.html"> <button class="btn menu-btn1">
+                    Go Home</button>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            })
+        }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>

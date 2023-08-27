@@ -19,7 +19,12 @@
 
 
 @media only screen and (max-width: 1024px) {
+ 
+    .article-tablet-a {
+        display: none;
+    }
 
+   
     
 .contact-social {
     display: flex !important;
@@ -181,6 +186,7 @@ h2 {
 }
 
 
+
 }
 
 @media only screen and (min-width: 791px){
@@ -191,6 +197,25 @@ h2 {
 
 
 @media only screen and (max-width: 790px) {
+
+    .tag-flex {
+        flex-wrap: wrap;
+    }
+
+    .script-box {
+        grid-template-areas: "a c"
+                            "b b";
+    }
+
+    .grid-area-3 {
+        justify-self: end;
+    }
+
+ 
+
+    .articles-grid {
+        grid-template-columns: auto;
+    }
 
     .contact-container {
         padding: 0 !important;
